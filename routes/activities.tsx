@@ -32,7 +32,6 @@ export default function Activities(
   }>
 ) {
   const { activities, page } = props.data;
-  console.log({ page });
 
   return (
     <Page>

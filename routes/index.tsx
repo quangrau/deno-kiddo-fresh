@@ -1,24 +1,19 @@
 /** @jsx h */
 import { h } from "preact";
 import { tw } from "@twind";
-import { Card, Headline, Page, PageMeta } from "../components/index.ts";
+import {
+  Card,
+  Headline,
+  Page,
+  PageHeader,
+  PageMeta,
+} from "../components/index.ts";
 
 export default function Home() {
   return (
     <Page>
       <PageMeta />
-      <header class={tw`py-10 md:py-20 flex flex-col items-center`}>
-        <img
-          src="/logo.svg"
-          class={tw`h-24`}
-          alt="the fresh logo: a sliced lemon dripping with juice"
-          width="100"
-          height="100"
-        />
-        <h1 class={tw`text-4xl sm:text-6xl font-extrabold text-gray-900`}>
-          Kiddo Fresh
-        </h1>
-      </header>
+      <PageHeader title="Kiddo Fresh" />
       <section class={tw`mt-10`}>
         <ul
           class={tw`space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10`}
