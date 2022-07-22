@@ -15,6 +15,8 @@ export const PageHeader = ({ title, children }: PageHeaderProps) => {
         src="/logo.svg"
         class={tw`h-24`}
         alt="the fresh logo: a sliced lemon dripping with juice"
+        width="100"
+        height="100"
       />
       <h1 class={tw`text-4xl sm:text-6xl font-extrabold text-gray-900`}>
         {title}

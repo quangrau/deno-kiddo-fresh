@@ -2,7 +2,12 @@
 import { Handlers, PageProps } from "$fresh/server.ts";
 import { h } from "preact";
 import { tw } from "@twind";
-import { ActivityCard, Page, PageHeader } from "../components/index.ts";
+import {
+  ActivityCard,
+  Page,
+  PageHeader,
+  PageMeta,
+} from "../components/index.ts";
 import type { IActivity } from "../utils/types.ts";
 
 export const handler: Handlers<{
@@ -31,6 +36,11 @@ export default function Activities(
 
   return (
     <Page>
+      <PageMeta
+        title="Activities"
+        description="Check out what your child has been doing at our center!"
+        url={`https://kiddo-fresh.deno.dev/activities?page=${page}`}
+      />
       <PageHeader title="Activities" />
       <section class={tw`mt-10`}>
         <ul

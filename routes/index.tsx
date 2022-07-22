@@ -12,6 +12,8 @@ export default function Home() {
           src="/logo.svg"
           class={tw`h-24`}
           alt="the fresh logo: a sliced lemon dripping with juice"
+          width="100"
+          height="100"
         />
         <h1 class={tw`text-4xl sm:text-6xl font-extrabold text-gray-900`}>
           Kiddo Fresh
@@ -36,7 +38,7 @@ export default function Home() {
               <a class={tw`block`} href="/activities">
                 <Headline level={3}>Activities →</Headline>
                 <p class={tw`pt-4 text-gray-600`}>
-                  Be sure to check out important announcements from the center.
+                  Check out what your child has been doing at our center!
                 </p>
               </a>
             </Card>
@@ -46,7 +48,7 @@ export default function Home() {
               <a class={tw`block`} href="/documents">
                 <Headline level={3}>Documents →</Headline>
                 <p class={tw`pt-4 text-gray-600`}>
-                  Be sure to check out important announcements from the center.
+                  All useful documents can be found here for you to download.
                 </p>
               </a>
             </Card>
@@ -56,7 +58,7 @@ export default function Home() {
               <a class={tw`block`} href="/events">
                 <Headline level={3}>Events →</Headline>
                 <p class={tw`pt-4 text-gray-600`}>
-                  Be sure to check out important announcements from the center.
+                  Upcoming events for your child that requires your attention.
                 </p>
               </a>
             </Card>
