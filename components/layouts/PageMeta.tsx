@@ -35,6 +35,9 @@ export const PageMeta = ({
       <meta property="og:url" content={metaUrl} />
       <meta property="og:type" content={metaType} />
       <meta property="og:locale" content={metaLocale} />
+      <meta name="theme-color" content="#f7fee7" />
+      <meta name="robots" content="noindex" />
+      <meta name="googlebot" content="noindex" />
     </Head>
   );
 };
