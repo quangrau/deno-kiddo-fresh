@@ -27,8 +27,12 @@ export const ActivityCard = ({ activity }: ActivityCardProps) => {
             return (
               <figure key={index} class={tw``}>
                 <img
+                  class={tw`object-cover`}
+                  loading="lazy"
                   src={`https://app.kinderconnect.sg${photo}`}
                   alt={`Image ${index + 1}`}
+                  width="800"
+                  height="800"
                 />
               </figure>
             );
