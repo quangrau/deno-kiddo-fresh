@@ -1,5 +1,8 @@
 # Kiddo Fresh
+> Live: https://kiddo-fresh.deno.dev/
+
 Just another side project with [fresh](https://fresh.deno.dev/) framework.
+
 
 ### Usage
 
