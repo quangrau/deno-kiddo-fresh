@@ -10,7 +10,7 @@ type HeadlineProps = {
 
 export const Headline = ({ level = 1, children }: HeadlineProps) => {
   return (
-    <h3
+    <h2
       class={tw(
         `font-extrabold text-${
           6 - level
@@ -18,7 +18,7 @@ export const Headline = ({ level = 1, children }: HeadlineProps) => {
       )}
     >
       {children}
-    </h3>
+    </h2>
   );
 };
 
