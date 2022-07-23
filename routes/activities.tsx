@@ -42,9 +42,7 @@ export default function Activities(
       />
       <PageHeader title="Activities" />
       <section class={tw`mt-10`}>
-        <ul
-          class={tw`space-y-10 md:grid md:grid-cols-1 md:gap-x-8 md:gap-y-10`}
-        >
+        <ul class={tw`grid grid-cols-1 gap-y-10 space-y-10 `}>
           {activities.map((activity) => (
             <li key={activity.id}>
               <ActivityCard activity={activity} />

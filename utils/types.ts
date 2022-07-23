@@ -8,7 +8,7 @@ export interface IActivity {
   link: string;
   title: string;
   date: string;
-  class: string;
+  classname: string;
   classroom: string;
   description: string;
   teachers: string[];
