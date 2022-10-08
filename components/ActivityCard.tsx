@@ -1,7 +1,6 @@
 /** @jsx h */
 import { h } from "preact";
 import { tw } from "@twind";
-import Avatar from "./Avatar.tsx";
 import Headline from "./Headline.tsx";
 import { IActivity } from "../utils/types.ts";
 import { TARGET_URL } from "../utils/const.ts";
@@ -53,7 +52,7 @@ export const ActivityCard = ({ activity }: ActivityCardProps) => {
           {classname}
         </span>
       </p>
-      <p class={tw`pt-8 text-lg text-gray-900`}>{description}</p>
+      <p class={tw`pt-8 text-lg text-gray-600`}>{description}</p>
 
       {/* GALLERY  */}
       <section class={tw`mt-10`}>

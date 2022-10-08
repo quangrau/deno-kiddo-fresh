@@ -21,21 +21,22 @@ export const AnnouncementCard = ({ announcement }: AnnouncementCardProps) => {
         <ul>
           {files.map((file) => (
             <li
-              class={tw`text-gray-600 flex items-center gap-1 mb-4 bg-gray-100 p-2 rounded`}
+              class={tw`text-gray-600 flex items-center gap-1 mb-4 bg-gray-100 p-2 rounded break-all`}
             >
-              <svg
-                width="24"
-                height="24"
-                fill="none"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-                class={tw`h-4 w-4`}
-              >
-                <path
-                  d="M12 2v6a2 2 0 0 0 2 2h6v10a2 2 0 0 1-2 2h-5a5 5 0 0 0-4-8H4V4a2 2 0 0 1 2-2h6Zm1.5.5V8a.5.5 0 0 0 .5.5h5.5l-6-6ZM5.75 15.75A.75.75 0 0 0 5 15l-.2.005A4 4 0 0 0 5 23l.102-.007A.75.75 0 0 0 5 21.5l-.164-.005A2.5 2.5 0 0 1 5 16.5l.102-.007a.75.75 0 0 0 .648-.743ZM13 19a4 4 0 0 0-4-4l-.102.007A.75.75 0 0 0 9 16.5l.164.005A2.5 2.5 0 0 1 9 21.5l-.102.007A.75.75 0 0 0 9 23l.2-.005A4 4 0 0 0 13 19Zm-4.25-.75h-3.5l-.102.007a.75.75 0 0 0 .102 1.493h3.5l.102-.007a.75.75 0 0 0-.102-1.493Z"
-                  fill="#9ca3af"
-                />
-              </svg>
+              <span class={tw`h-4 w-4 mr-2 self-start`}>
+                <svg
+                  width="18"
+                  height="18"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 2v6a2 2 0 0 0 2 2h6v10a2 2 0 0 1-2 2h-5a5 5 0 0 0-4-8H4V4a2 2 0 0 1 2-2h6Zm1.5.5V8a.5.5 0 0 0 .5.5h5.5l-6-6ZM5.75 15.75A.75.75 0 0 0 5 15l-.2.005A4 4 0 0 0 5 23l.102-.007A.75.75 0 0 0 5 21.5l-.164-.005A2.5 2.5 0 0 1 5 16.5l.102-.007a.75.75 0 0 0 .648-.743ZM13 19a4 4 0 0 0-4-4l-.102.007A.75.75 0 0 0 9 16.5l.164.005A2.5 2.5 0 0 1 9 21.5l-.102.007A.75.75 0 0 0 9 23l.2-.005A4 4 0 0 0 13 19Zm-4.25-.75h-3.5l-.102.007a.75.75 0 0 0 .102 1.493h3.5l.102-.007a.75.75 0 0 0-.102-1.493Z"
+                    fill="#9ca3af"
+                  />
+                </svg>
+              </span>
               <a
                 href={`${TARGET_URL}${file.url}`}
                 target="_blank"
@@ -61,7 +62,7 @@ export const AnnouncementCard = ({ announcement }: AnnouncementCardProps) => {
           {date}
         </span>
       </p>
-      <p class={tw`pt-8 text-lg text-gray-900`}>{description}</p>
+      <p class={tw`pt-8 text-lg text-gray-600`}>{description}</p>
       {renderFiles()}
     </article>
   );
