@@ -18,8 +18,14 @@ export interface IActivity {
 
 export interface IAnnouncement {
   id: string;
+  link: string;
   date: string;
   title: string;
   description: string;
-  link: string;
+  files?: Array<IFile>;
+}
+
+export interface IFile {
+  name: string;
+  url: string;
 }

@@ -4,6 +4,7 @@ import { tw } from "@twind";
 import Avatar from "./Avatar.tsx";
 import Headline from "./Headline.tsx";
 import { IActivity } from "../utils/types.ts";
+import { TARGET_URL } from "../utils/const.ts";
 
 interface ActivityCardProps {
   activity: IActivity;
@@ -18,7 +19,7 @@ export const ActivityCard = ({ activity }: ActivityCardProps) => {
         <img
           class={tw`object-cover`}
           loading="lazy"
-          src={`https://app.kinderconnect.sg${src}`}
+          src={`${TARGET_URL}${src}`}
           alt={`Image ${index + 1}`}
           width="800"
           height="800"
@@ -33,7 +34,7 @@ export const ActivityCard = ({ activity }: ActivityCardProps) => {
         <source
           loading="lazy"
           class={tw`object-cover`}
-          src={`https://app.kinderconnect.sg${src}`}
+          src={`${TARGET_URL}${src}`}
         />
       </video>
     );

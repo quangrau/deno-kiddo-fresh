@@ -20,8 +20,8 @@ export default function Home() {
         >
           <li>
             <Card>
-              <a class={tw`block`} href="/annoucements">
-                <Headline level={3}>Annoucements →</Headline>
+              <a class={tw`block`} href="/announcements">
+                <Headline level={3}>Announcements →</Headline>
                 <p class={tw`pt-4 text-gray-600`}>
                   Be sure to check out important announcements from the center.
                 </p>

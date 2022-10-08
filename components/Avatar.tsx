@@ -2,6 +2,7 @@
 import { h } from "preact";
 import type { ComponentChildren } from "preact";
 import { tw } from "@twind";
+import { TARGET_URL } from "../utils/const.ts";
 
 type AvatarProps = {
   src?: string | null;
@@ -16,7 +17,7 @@ export const Avatar = ({ src, name }: AvatarProps) => {
       {src ? (
         <img
           class={tw`block w-full h-full object-cover`}
-          src={`https://app.kinderconnect.sg${src}`}
+          src={`${TARGET_URL}${src}`}
           alt={name}
         />
       ) : (
