@@ -62,7 +62,7 @@ export const AnnouncementCard = ({ announcement }: AnnouncementCardProps) => {
           {date}
         </span>
       </p>
-      <p class={tw`pt-8 text-lg text-gray-600`}>{description}</p>
+      <p class={tw`pt-8 text-lg text-gray-600 break-all`}>{description}</p>
       {renderFiles()}
     </article>
   );

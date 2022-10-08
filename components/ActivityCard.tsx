@@ -52,7 +52,7 @@ export const ActivityCard = ({ activity }: ActivityCardProps) => {
           {classname}
         </span>
       </p>
-      <p class={tw`pt-8 text-lg text-gray-600`}>{description}</p>
+      <p class={tw`pt-8 text-lg text-gray-600 break-all`}>{description}</p>
 
       {/* GALLERY  */}
       <section class={tw`mt-10`}>
